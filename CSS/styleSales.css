@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(158, 123, 70);
+    margin: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: rgb(73, 47, 13);
+}
+table,th,td{
+    margin-left:15%; 
+    margin-right:15%;
+    border: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    background-color: khaki;
+    color:rgb(61, 41, 14) ;
+}
+
+
