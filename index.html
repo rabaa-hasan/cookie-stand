@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,72 @@
     <title>Pat’s Salmon Cookies</title>
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
-<body>
-    <h1>Welcome to Pat’s Salmon Cookies!</h1>
-    <img src="./images/salmon.png" alt="">
-    <p><a href="sales.html" target="_blank">Sales Details</a></p>
 
-    
+<body>
+    <h1 class="heading">Welcome to Pat’s Salmon Cookies!</h1>
+    <p><a href="sales.html" target="_blank">Sales Details</a></p>
+    <div>
+        <img class="mySlides" src="./images/salmon.png" alt="">
+        <img class="mySlides" src="./images/chinook.jpg" alt="">
+        <img class="mySlides" src="./images/cutter.jpeg" alt="">
+        <img class="mySlides" src="./images/family.jpg" alt="">
+        <img class="mySlides" src="./images/fish.jpg" alt="">
+        <img class="mySlides" src="./images/frosted-cookie.jpg" alt="">
+        <img class="mySlides" src="./images/shirt.jpg" alt="">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+    </script>
+
+
+    <h1>Seattle </h1>
+    <ul>
+        <li>Location:12505 Bel-Red Rd #106, Bellevue, WA 98005، USA</li>
+        <li>Working Hours: From 6:00 am to 8:00 pm</li>
+        <li>contact info: seattle@yahoo.com</li>
+    </ul>
+
+    <h1>Tokyo </h1>
+    <ul>
+        <li>Location:1-1 Chiyoda, Chiyoda City, Tokyo 100-8111، Japan</li>
+        <li>Working Hours: From 6:00 am to 8:00 pm</li>
+        <li>contact info: tokyo@yahoo.com</li>
+    </ul>
+
+    <h1>Dubai </h1>
+    <ul>
+        <li>Location:DownTown Jabal Ali</li>
+        <li>Working Hours: From 6:00 am to 8:00 pm</li>
+        <li>contact info: dubai@yahoo.com</li>
+    </ul>
+
+    <h1>Paris </h1>
+    <ul>
+        <li>Location:Rue de Rivoli, 75001 Paris,France</li>
+        <li>Working Hours: From 6:00 am to 8:00 pm</li>
+        <li>contact info: paris@yahoo.com</li>
+    </ul>
+
+    <h1>Lima </h1>
+    <ul>
+        <li>Location:San Rafael SJL Gobierno Regional de Lima, LIMA 36</li>
+        <li>Working Hours: From 6:00 am to 8:00 pm</li>
+        <li>contact info: lima@yahoo.com</li>
+    </ul>
+
 </body>
+
 </html>

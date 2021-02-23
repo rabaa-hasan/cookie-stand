@@ -3,14 +3,17 @@ body{
     margin: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1{
+.heading{
     text-align: center;
+}
+h1{
     color: rgb(73, 47, 13);
 }
-img{
-    display: block;
-    margin: 10%;
-}
+/* div{
+    
+} */
+.mySlides {display: block;
+    margin: 15%;}
 p{
     direction: ltr;
     font-size: 18px;
