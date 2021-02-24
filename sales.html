@@ -7,14 +7,39 @@
     <title>Sales Details</title>
     <link rel="stylesheet" href="./CSS/styleSales.css">
 </head>
-<body id='SalesDetails'>
+<body>
     <h1>SalesDetails</h1>
-    <div>
+    <p><a href="index.html" target="_self">Pat’s Salmon Cookies</a></p>
+    <br>
+    <form action="" id="addNewCity">
+        <fieldset>
+            <legend>Add New City</legend>
+        
+        <label for="cityName">City Name</label>
+        <input type="text" id="cityName" name="city-name">
+            
+        <label for="minCustomer">Minimum Customer Per Hour</label>
+        <input type="number" id="minCustomer" name="mini-customer">
+            
+        <label for="maxCustomer">Maximum Customer Per Hour</label>
+        <input type="number" id="maxCustomer" name="max-customer">
+            
+        <label for="average">Average</label>
+        <input type="text" id="average" name="average">
+            
+        <button type="submit">Add New Branch!</button>
+     </fieldset>
+    </form>
+    
+    <br>
+
+
+    <div id='SalesDetails'>
         <table>
 
         </table>
     </div>
-    <p><a href="index.html" target="_self">Pat’s Salmon Cookies</a></p>
    <script src="./JavaScript/app.js"></script> 
+
 </body>
 </html>

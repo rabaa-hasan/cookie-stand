@@ -17,4 +17,17 @@ table,th,td{
     color:rgb(61, 41, 14) ;
 }
 
+form fieldset{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
 
+form fieldset legend,label,input{
+    color:rgb(73, 49, 15);
+}
+
+form button{
+    color:rgb(73, 49, 15);
+    padding: 5px;
+    margin: 5px;
+}
