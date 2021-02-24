@@ -9,6 +9,7 @@ function City(name, minCustomers, maxCustomers, customerAvgCookies, avgCookiesHr
   this.customerArr = [];
   this.hourlyTotal = 0;
   this.avgCookiesHr = avgCookiesHr;
+  City.allcity.push(this);
 }
 
 City.prototype.randomCustomer = function () {
@@ -40,6 +41,7 @@ City.prototype.render = function () {
   td3.textContent = this.hourlyTotal;
 };
 
+
 const tableHeader = function() {
   const parentElement = document.getElementById('SalesDetails');
   const table = document.createElement('table');
@@ -64,6 +66,9 @@ const tableHeader = function() {
   th3.textContent = 'Total of Totals';
 };
 tableHeader();
+
+
+City.allcity=[];
 
 const Seattle = new City('Seattle', 23, 65, 6.3);
 Seattle.randomCustomer(23, 65);
@@ -94,6 +99,9 @@ function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+
+
+
 const tableFooter = function() {
   const tableElement = document.getElementById('placeTable');
 
@@ -107,7 +115,7 @@ const tableFooter = function() {
   for(let i = 0; i < time.length; i++) {
     const th2 = document.createElement('th');
     tr.appendChild(th2);
-    th2.textContent = Seattle.customerArr[i] + Tokyo.customerArr[i] + Paris.customerArr[i] + Dubai.customerArr[i] + Lima.customerArr[i];
+    th2.textContent =Seattle.customerArr[i]+Tokyo.customerArr[i]+Dubai.customerArr[i]+Paris.customerArr[i]+Lima.customerArr[i];
   }
 
   const th3 = document.createElement('th');
@@ -116,3 +124,25 @@ const tableFooter = function() {
 };
 
 tableFooter();
+
+
+
+const formElement = document.getElementById('addNewCity');
+formElement.addEventListener('submit',function(event){
+  event.preventDefault();
+
+  const cityName = event.target.cityName.value;
+  const minCustomer = event.target.minCustomer.value;
+  const maxCustomer = event.target.maxCustomer.value;
+  const average = event.target.average.value;
+
+
+  const city = new City (cityName, minCustomer, maxCustomer, average);
+  formElement.reset();
+  city.randomCustomer();
+  city.render();
+  document.getElementById('placeTable').deleteRow(6);
+  tableFooter();
+
+});
+
