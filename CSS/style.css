@@ -1,13 +1,13 @@
 body{
     background-color: rgb(158, 123, 70);
     margin: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .heading{
     text-align: center;
 }
 h1{
     color: rgb(73, 47, 13);
+    font-family: 'Dancing Script', cursive;
 }
 /* div{
     
@@ -17,4 +17,12 @@ h1{
 p{
     direction: ltr;
     font-size: 18px;
+}
+ul li{
+    font-family: 'Dosis', sans-serif;
+    color:rgb(97, 63, 19);
+}
+.font{
+    font-family: 'Josefin Slab', serif;
+    color:rgb(51, 33, 9);
 }
