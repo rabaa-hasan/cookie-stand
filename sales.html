@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./CSS/styleSales.css">
 </head>
 <body>
-    <h1>SalesDetails</h1>
+    <h1>Sales Details</h1>
     <p><a href="index.html" target="_self">Pat’s Salmon Cookies</a></p>
     <br>
     <form action="" id="addNewCity">
@@ -16,16 +16,16 @@
             <legend>Add New City</legend>
         
         <label for="cityName">City Name</label>
-        <input type="text" id="cityName" name="city-name">
+        <input type="text" id="cityName" name="city-name" required>
             
         <label for="minCustomer">Minimum Customer Per Hour</label>
-        <input type="number" id="minCustomer" name="mini-customer">
+        <input type="number" id="minCustomer" name="mini-customer" required>
             
         <label for="maxCustomer">Maximum Customer Per Hour</label>
-        <input type="number" id="maxCustomer" name="max-customer">
+        <input type="number" id="maxCustomer" name="max-customer" required>
             
         <label for="average">Average</label>
-        <input type="text" id="average" name="average">
+        <input type="number" id="average" name="average" required>
             
         <button type="submit">Add New Branch!</button>
      </fieldset>

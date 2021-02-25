@@ -7,19 +7,32 @@ body{
 h1{
     text-align: center;
     color: rgb(73, 47, 13);
+    font-family: 'Dancing Script', cursive;
 }
 table,th,td{
     margin-left:15%; 
     margin-right:15%;
     border: 2px solid rgb(0, 0, 0);
     text-align: center;
+    padding: 5px;
+    
+}
+th{
     background-color: khaki;
     color:rgb(61, 41, 14) ;
+    font-family: 'Josefin Slab', serif;
+}
+td{
+    background-color: rgb(230, 223, 166);
+    color:rgb(41, 25, 5) ;
+    font-family: 'Dosis', sans-serif;
+    
 }
 
 form fieldset{
     border: 1px solid rgb(0, 0, 0);
     padding: 10px;
+    font-family: 'Josefin Slab', serif;
 }
 
 form fieldset legend,label,input{
